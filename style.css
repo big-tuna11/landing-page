@@ -3,16 +3,20 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: Roboto, sans-serif;
+    width: 100%;
 }
 
-.header, .top, .footer {
+.header-background, .top-background, .footer {
     background-color: #1F2937;
+    margin: 0;
 }
 
-.header, .top, .bottom {
+.header, .top-content, .middle-content, .bottom-content {
     display: flex;
-    padding-left: 80px;
-    padding-right: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: min(5%);
+    padding-right: min(5%);
 }
 
 .header {
@@ -41,13 +45,21 @@ ul {
 
 .content {
     display: flex;
-}
-
-.top {
+    flex-direction: column;
     align-items: center;
+    background-color: black;
+    align-items: stretch;
 }
 
-.top-left {
+.top-content {
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 8%;
+    justify-content: center;
+}
+
+.top-left, .top-right {
     display: flex;
     flex-direction: column;
 }
