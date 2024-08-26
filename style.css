@@ -6,6 +6,12 @@ body {
     width: 100%;
 }
 
+.top-background, .middle-background, .bottom-background {
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
 .header-background, .top-background, .footer {
     background-color: #1F2937;
     margin: 0;
@@ -47,14 +53,11 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
     align-items: stretch;
 }
 
 .top-content {
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
     gap: 8%;
     justify-content: center;
 }
@@ -78,4 +81,40 @@ ul {
     font-weight: 700;
     border-radius: 8px;
     border: none;
+}
+
+.middle-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    position: relative;
+}
+
+.middle-content {
+    gap: 7vw;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 150px;
+    text-align: center;
+}
+
+.image-text img {
+    height: 150px;
+    width: 150px;
+    border: 2px solid #3882F6;
+    border-radius: 15px;
+}
+
+h2 {
+    top: 0;
+    position: absolute;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
 }
