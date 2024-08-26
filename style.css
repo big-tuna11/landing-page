@@ -49,7 +49,7 @@ ul {
     padding: 0;
 }
 
-.content {
+.sections {
     display: flex;
     flex-direction: column;
     align-items: center;
