@@ -12,14 +12,35 @@ body {
     align-items: center;
 }
 
+.banner-background {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: min(5%);
+    padding-right: min(5%);
+}
+
+.header-background {
+    padding: 25px 0;
+}
+
 .header-background, .hero-background, .footer {
     background-color: #1F2937;
     margin: 0;
 }
 
-.header, .hero-content, .icons-content, .bottom-content {
+.header, .hero-content {
     display: flex;
     max-width: 1200px;
+    margin: 0 auto;
+    padding-left: min(5%);
+    padding-right: min(5%);
+}
+
+.icons-content, .quote-content {
+    display: flex;
+    max-width: 1000px;
     margin: 0 auto;
     padding-left: min(5%);
     padding-right: min(5%);
@@ -74,13 +95,23 @@ ul {
 }
 
 .sign-up {
-    width: 100px;
-    height: 30px;
+    width: 130px;
+    height: 35px;
     background-color: #3882F6;
     color: #F9FAF8;
     font-weight: 700;
     border-radius: 8px;
     border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.hero-left .sign-up {
+    margin-top: 10px;
+}
+
+.banner-content .sign-up {
+    border: 2px solid #F9FAF8;
 }
 
 .icons-background {
@@ -116,4 +147,62 @@ h2 {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+}
+
+.quote-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    background-color: #E5E7EB;
+}
+
+.quote-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-tag {
+    font-size: 24px;
+    color: #1F2937;
+    font-weight: 900;
+    align-self: end;
+}
+
+.quote {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.banner-content {
+    box-sizing: border-box;
+    background-color: #3882F6;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+    border-radius: 10px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-title {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.banner-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
 }
