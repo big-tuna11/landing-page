@@ -42,8 +42,10 @@ body {
 
 .icons-content, .quote-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0;
     padding-left: min(5%);
     padding-right: min(5%);
 }
@@ -126,7 +128,7 @@ ul {
 }
 
 .icons-content {
-    gap: 7vw;
+    gap: 7vw;;
 }
 
 .image-text {
@@ -162,8 +164,6 @@ h2 {
 
 .quote-content {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .quote-tag {
@@ -215,4 +215,8 @@ h2 {
     height: 90px; 
     line-height: 90px;
     text-align: center;
+}
+
+.hero-background, .icons-background, .quote-background, .banner-background {
+    flex: 1 1 auto;
 }
