@@ -2,23 +2,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
     margin: 0;
     font-family: Roboto, sans-serif;
-    width: 100%;
 }
 
 .hero-background, .icons-background {
-    height: 400px;
     display: flex;
     align-items: center;
+    height: 400px;
 }
 
 .banner-background {
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 300px;
     padding-left: min(5%);
     padding-right: min(5%);
 }
@@ -29,7 +27,7 @@ body {
 
 .header-background, .hero-background, .footer {
     background-color: #1F2937;
-    margin: 0;
+    margin: -1px 0;
 }
 
 .header, .hero-content {
@@ -76,7 +74,6 @@ ul {
 .sections {
     display: flex;
     flex-direction: column;
-    align-items: center;
     align-items: stretch;
     flex-grow: 1;
 }
@@ -146,8 +143,8 @@ ul {
 }
 
 h2 {
-    top: 0;
     position: absolute;
+    top: 0;
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
